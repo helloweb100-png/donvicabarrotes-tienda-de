@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><rect width="120" height="120" rx="30" fill="#348e39"/><text x="60" y="62" font-family="system-ui,-apple-system,Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" fill="#f8f9f8" text-anchor="middle" dominant-baseline="middle">DVA</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="40" fill="#133d15"/>
+  <g transform="translate(58,30)">
+    <path d="M46 0c9 2 15 10 14 19-10 2-19-4-21-13-1-4 2-6 7-6z" fill="#59ae5d"/>
+    <rect x="2" y="16" width="80" height="13" rx="6.5" fill="#f2a93b"/>
+    <path d="M6 27h72l-9 38a9 9 0 0 1-8.8 6.8H23.8A9 9 0 0 1 15 65L6 27z" fill="#f2a93b"/>
+    <circle cx="27" cy="82" r="7.5" fill="#f4efe8"/>
+    <circle cx="61" cy="82" r="7.5" fill="#f4efe8"/>
+  </g>
+  <text x="100" y="150" font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="700" fill="#f8f9f8" text-anchor="middle">DON VIC</text>
+  <text x="100" y="171" font-family="Arial,Helvetica,sans-serif" font-size="12.5" font-weight="700" letter-spacing="3.2" fill="#9fc79f" text-anchor="middle">ABARROTES</text>
+</svg>
