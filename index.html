@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abarrotes Plaza Puebla: tienda de abarrotes con entrega a domicilio en Plaza Puebla. Productos frescos todos los dias a precios que cuidan tu bolsillo.</title>
-  <meta name="description" content="Abarrotes Plaza Puebla: tienda de abarrotes con entrega a domicilio en Plaza Puebla. Productos frescos todos los dias a precios que cuidan tu bolsillo.">
-  <meta name="keywords" content="abarrotes Plaza Puebla, tienda de abarrotes, entrega a domicilio, abarrotes frescos, productos del dia, tienda cercana, abarrotes baratos, domicilio Plaza Puebla">
+  <title>Don Vic Abarrotes: tienda de abarrotes con entrega a domicilio en Puebla</title>
+  <meta name="description" content="Don Vic Abarrotes: productos frescos todos los dias y entrega a domicilio en Puebla, a precios que cuidan tu bolsillo. Pide por WhatsApp.">
+  <meta name="keywords" content="Don Vic Abarrotes, abarrotes Puebla, tienda de abarrotes, entrega a domicilio Puebla, abarrotes frescos, tienda cercana, abarrotes baratos">
   <meta name="author" content="DON VIC ABARROTES">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#050506">
-  <meta property="og:title" content="Abarrotes Plaza Puebla: tienda de abarrotes con entrega a domicilio en Plaza Puebla. Productos frescos todos los dias a precios que cuidan tu bolsillo.">
-  <meta property="og:description" content="Abarrotes Plaza Puebla: tienda de abarrotes con entrega a domicilio en Plaza Puebla. Productos frescos todos los dias a precios que cuidan tu bolsillo.">
+  <meta property="og:title" content="Don Vic Abarrotes: tienda de abarrotes con entrega a domicilio en Puebla">
+  <meta property="og:description" content="Productos frescos todos los dias y entrega a domicilio en Puebla, a precios que cuidan tu bolsillo. Pide por WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <meta property="og:image" content="logo.svg">
@@ -952,7 +952,7 @@ body.is-ready .hero-eyebrow::after {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("img/1.jpg") center center / cover no-repeat;
+  background: url("img/4.jpg") center center / cover no-repeat;
   background-attachment: fixed;
   opacity: 0;
   transition: opacity 1.8s ease;
@@ -1527,6 +1527,97 @@ main section[id] {
   font-family: var(--hw-display);
   font-weight: 600;
   line-height: 1.45;
+}
+
+/* =========================================================
+   FEATURE GRID (tarjetas compactas de servicio)
+   ========================================================= */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: clamp(48px, 5.5vw, 72px);
+}
+
+.feature-card {
+  padding: clamp(28px, 2.6vw, 36px) clamp(24px, 2.2vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--wash-1);
+  transition: border-color 0.35s ease, transform 0.35s var(--ease-out), background 0.35s ease;
+}
+
+.feature-card:hover {
+  border-color: color-mix(in srgb, var(--red) 40%, transparent);
+  background: color-mix(in srgb, var(--red) 5%, var(--wash-1));
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 20px;
+  border-radius: var(--r-btn);
+  background: color-mix(in srgb, var(--red) 12%, transparent);
+  color: var(--red);
+}
+
+.feature-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.feature-card h3 {
+  font-family: var(--hw-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: clamp(44px, 5vw, 68px);
+  padding: clamp(24px, 2.6vw, 32px) clamp(20px, 2.4vw, 30px);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.86rem;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.trust-item svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  color: var(--red);
+}
+
+@media (max-width: 860px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .trust-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* =========================================================
@@ -3176,7 +3267,7 @@ main section[id] {
         <span class="brand-mark"><img src="logo.svg" alt="DON VIC ABARROTES" class="brand-logo"></span>
         <span class="brand-text">
           <span class="brand-name">DON VIC ABARROTES</span>
-          <span class="brand-tagline">Abarrotes frescos cada dia en Plaza Puebla</span>
+          <span class="brand-tagline">Abarrotes frescos cada dia en Puebla</span>
         </span>
       </a>
       <nav class="main-nav" id="main-nav">
@@ -3204,7 +3295,7 @@ main section[id] {
       <canvas id="particles-canvas" aria-hidden="true"></canvas>
       <div class="hero-rules" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       <div class="container hero-inner">
-        <p class="eyebrow hero-eyebrow" data-hero="1">Entrega a domicilio en Plaza Puebla</p>
+        <p class="eyebrow hero-eyebrow" data-hero="1">Entrega a domicilio en Puebla</p>
         <h1 class="hero-title">
           <span class="line" data-hero="2"><span class="line-inner gradient-text">Tu tienda de confianza</span></span>
           <span class="line" data-hero="3"><span class="line-inner">llega hasta tu puerta</span></span>
@@ -3213,7 +3304,7 @@ main section[id] {
           <span class="hero-typewriter-label">Hoy tenemos:</span>
           <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor" aria-hidden="true"></span>
         </p>
-        <p class="hero-desc" data-hero="5">En Abarrotes Plaza Puebla te llevamos lo que necesitas directo a tu casa. Productos frescos todos los dias, a precios que cuidan tu bolsillo, sin que tengas que salir de tu zona.</p>
+        <p class="hero-desc" data-hero="5">Te llevamos lo que necesitas directo a tu casa en Puebla. Productos frescos todos los dias, a precios que cuidan tu bolsillo, sin que tengas que salir de tu zona.</p>
         <div class="hero-cta" data-hero="6">
           <button type="button" class="btn btn-primary btn-lg" data-wa-trigger>
             <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
@@ -3227,7 +3318,7 @@ main section[id] {
         <div class="hero-meta" data-hero="7">
           <div class="hero-meta-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-            <span></span>
+            <span>Puebla, Pue.</span>
           </div>
           <div class="hero-meta-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.9-13H11v6l5.2 3.1.9-1.5-4.2-2.5Z"/></svg>
@@ -3259,68 +3350,47 @@ main section[id] {
           </div>
         </div>
 
-        <div class="service-rows">
-          <article class="service-row">
-            <div class="service-media" data-reveal="media">
-              <img src="img/2.jpg" alt="Abarrotes y despensa del dia" loading="lazy">
-            </div>
-            <div class="service-body" data-reveal-group>
-              <div class="service-body-head" data-reveal>
-                <span class="service-index" aria-hidden="true">01</span>
-                <span class="tag">Productos frescos</span>
-              </div>
-              <h3 class="service-title" data-reveal>Abarrotes y despensa del dia</h3>
-              <p class="service-desc" data-reveal>Surtido completo de abarrotes renovado cada dia para que siempre encuentres lo que buscas fresco y en buen estado. Ideal para la compra diaria o semanal de tu hogar.</p>
-              <ul class="service-list">
-                <li data-reveal>Productos repuestos cada manana</li>
-                <li data-reveal>Amplio surtido de marcas conocidas</li>
-                <li data-reveal>Frutas, verduras y basicos del hogar</li>
-                <li data-reveal>Disponible todos los dias de la semana</li>
-                <li data-reveal>Atencion rapida y sin filas largas</li>
-              </ul>
-            </div>
-          </article>
+        <div class="feature-grid" data-reveal-group>
+          <div class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 3 6v6c0 5.1 3.6 9.3 9 10 5.4-.7 9-4.9 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
+            </span>
+            <h3>Productos frescos cada dia</h3>
+            <p>Surtido completo de abarrotes renovado a diario: frutas, verduras y basicos del hogar siempre en buen estado.</p>
+          </div>
+          <div class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4ZM6 18.5A1.5 1.5 0 1 1 6 15.5a1.5 1.5 0 0 1 0 3Zm13.5-9 1.96 2.5H17V9.5h2.5ZM18 18.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/></svg>
+            </span>
+            <h3>Te lo llevamos a tu puerta</h3>
+            <p>Pide desde donde estes y recibe tus abarrotes en Puebla sin salir de casa, comodo y sin contratiempos.</p>
+          </div>
+          <div class="feature-card" data-reveal>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.41l9 9c.36.36.86.59 1.41.59.55 0 1.05-.23 1.41-.59l7-7c.36-.36.59-.87.59-1.42 0-.55-.23-1.06-.59-1.42ZM5.5 7A1.5 1.5 0 1 1 7 5.5 1.5 1.5 0 0 1 5.5 7Z"/></svg>
+            </span>
+            <h3>Precios que cuidan tu bolsillo</h3>
+            <p>Calidad a precios justos, sin cobros escondidos: mismo precio en tienda y a domicilio.</p>
+          </div>
+        </div>
 
-          <article class="service-row service-row--reverse">
-            <div class="service-media" data-reveal="media">
-              <img src="img/3.jpg" alt="Te llevamos tu pedido a Plaza Puebla" loading="lazy">
-            </div>
-            <div class="service-body" data-reveal-group>
-              <div class="service-body-head" data-reveal>
-                <span class="service-index" aria-hidden="true">02</span>
-                <span class="tag">Entrega a domicilio</span>
-              </div>
-              <h3 class="service-title" data-reveal>Te llevamos tu pedido a Plaza Puebla</h3>
-              <p class="service-desc" data-reveal>Pide desde donde estes y recibe tus abarrotes sin salir de casa. El servicio cubre la zona de Plaza Puebla para que tu compra llegue comoda y sin contratiempos.</p>
-              <ul class="service-list">
-                <li data-reveal>Entrega en la zona de Plaza Puebla</li>
-                <li data-reveal>Pides y nosotros llevamos</li>
-                <li data-reveal>Sin necesidad de trasladarte</li>
-                <li data-reveal>Productos en buen estado al llegar</li>
-                <li data-reveal>Servicio directo desde la tienda</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="service-row">
-            <div class="service-media" data-reveal="media">
-              <img src="img/4.jpg" alt="Precios que cuidan tu bolsillo" loading="lazy">
-            </div>
-            <div class="service-body" data-reveal-group>
-              <div class="service-body-head" data-reveal>
-                <span class="service-index" aria-hidden="true">03</span>
-                <span class="tag">Precios accesibles</span>
-              </div>
-              <h3 class="service-title" data-reveal>Precios que cuidan tu bolsillo</h3>
-              <p class="service-desc" data-reveal>Ofrecemos productos de calidad a precios justos para que tu compra rinda mas. Sin cobros escondidos ni sorpresas: lo que ves es lo que pagas.</p>
-              <ul class="service-list">
-                <li data-reveal>Precios directos sin letra chica</li>
-                <li data-reveal>Calidad sin pagar de mas</li>
-                <li data-reveal>Mismo precio en tienda y a domicilio</li>
-                <li data-reveal>Productos frescos a precio justo</li>
-              </ul>
-            </div>
-          </article>
+        <div class="trust-strip" data-reveal-group>
+          <div class="trust-item" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>
+            <span>Productos frescos todos los dias</span>
+          </div>
+          <div class="trust-item" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>
+            <span>Entrega a domicilio en Puebla</span>
+          </div>
+          <div class="trust-item" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>
+            <span>Pide con 1 dia de anticipacion para garantizar tu pedido</span>
+          </div>
+          <div class="trust-item" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>
+            <span>Atencion cercana de tienda de barrio</span>
+          </div>
         </div>
 
         <div class="services-cta" data-reveal>
@@ -3329,148 +3399,37 @@ main section[id] {
         </div>
       </div>
     </section>
-<section class="parallax-banner" data-parallax>
-      <div class="parallax-bg" style="background-image:url('img/5.jpg');" aria-hidden="true"></div>
-      <div class="parallax-overlay" aria-hidden="true"></div>
-      <div class="container parallax-content">
-        <p class="eyebrow" data-reveal>Tu tienda de confianza</p>
-        <h2 data-reveal>Abarrotes frescos cada dia, sin salir de Plaza Puebla.</h2>
-      </div>
-    </section>
-<section class="why-us has-bg">
-      <div class="section-bg" style="background-image:url('img/9.jpg');" aria-hidden="true"></div>
-      <div class="section-bg-veil" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-head section-head--center">
-          <div class="section-head-main">
-            <p class="eyebrow" data-reveal>Por que elegirnos</p>
-            <h2 class="section-title" data-reveal>Lo que nos hace diferentes en tu colonia</h2>
-          </div>
-        </div>
-
-        <ol class="timeline" id="timeline">
-          <span class="timeline-track" aria-hidden="true"></span>
-          <span class="timeline-progress" id="timeline-progress" aria-hidden="true"></span>
-
-          <li class="timeline-step" data-step="1" data-reveal>
-            <span class="timeline-node" aria-hidden="true">
-              <span class="timeline-num">01</span>
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 20 17.8 6.2l-2-2L2 18v4h4Zm15.2-15.2.9-.9a1.7 1.7 0 0 0 0-2.4l-.6-.6a1.7 1.7 0 0 0-2.4 0l-.9.9 3 3Z"/></svg>
-            </span>
-            <div class="timeline-card">
-              <h3>Productos frescos todos los dias</h3>
-              <p>Surtimos la tienda cada dia para que encuentres frutas, verduras y abarrotes en buen estado, no de dias anteriores.</p>
-            </div>
-          </li>
-
-          <li class="timeline-step" data-step="2" data-reveal>
-            <span class="timeline-node" aria-hidden="true">
-              <span class="timeline-num">02</span>
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 3 6v6c0 5.1 3.6 9.3 9 10 5.4-.7 9-4.9 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
-            </span>
-            <div class="timeline-card">
-              <h3>Entrega a domicilio en Plaza Puebla</h3>
-              <p>Te llevamos el pedido directo a tu puerta dentro de la zona de Plaza Puebla, sin que tengas que salir de casa.</p>
-            </div>
-          </li>
-
-          <li class="timeline-step" data-step="3" data-reveal>
-            <span class="timeline-node" aria-hidden="true">
-              <span class="timeline-num">03</span>
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></svg>
-            </span>
-            <div class="timeline-card">
-              <h3>Precios que cuidan tu bolsillo</h3>
-              <p>Manejamos precios accesibles para que puedas surtirte sin gastar de mas, sin sacrificar la calidad de lo que llevas.</p>
-            </div>
-          </li>
-
-          <li class="timeline-step" data-step="4" data-reveal>
-            <span class="timeline-node" aria-hidden="true">
-              <span class="timeline-num">04</span>
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h-1v3.9l4.7 8.1A4 4 0 0 1 17.2 22H6.8a4 4 0 0 1-3.5-6L8 7.9V4H7V2Zm3 6.4L5 17a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 17l-5-8.6V4h-4v4.4Z"/></svg>
-            </span>
-            <div class="timeline-card">
-              <h3>Atencion cercana y de confianza</h3>
-              <p>Somos una tienda de barrio: te conocemos, te atendemos bien y resolvemos tu pedido sin complicaciones ni demoras.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="why-us-cta" data-reveal>
-          <button type="button" class="btn btn-primary btn-lg" data-wa-trigger>
-            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
-            <span>Pedir por WhatsApp</span>
-          </button>
-        </div>
-      </div>
-    </section>
-<section class="brochures">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-head-main">
-            <p class="eyebrow" data-reveal>Lo que te llevas</p>
-            <h2 class="section-title" data-reveal>Tu despensa lista sin salir de casa</h2>
-          </div>
-          <p class="section-desc" data-reveal>Dejas de hacer filas, de gastar en transporte y de encontrar productos pasados. Tu familia tiene lo que necesita cada dia, a un precio justo y con la tranquilidad de que alguien de confianza te lo lleva a la puerta.</p>
-        </div>
-        <div class="brochures-grid" data-reveal-group>
-          <figure class="brochure-item" data-reveal="media"><img src="img/6.jpg" alt="Tu despensa lista sin salir de casa" loading="lazy"></figure>
-          <figure class="brochure-item" data-reveal="media"><img src="img/7.jpg" alt="Lo que te llevas" loading="lazy"></figure>
-        </div>
-      </div>
-    </section>
-<section class="parallax-banner parallax-banner--alt" data-parallax>
-      <div class="parallax-bg" style="background-image:url('img/8.jpg');" aria-hidden="true"></div>
-      <div class="parallax-overlay" aria-hidden="true"></div>
-      <div class="container parallax-content">
-        <p class="eyebrow" data-reveal>Asi trabajamos</p>
-        <h2 data-reveal>Surtimos con cuidado para que tu familia siempre encuentre lo que necesita.</h2>
-      </div>
-    </section>
 <section class="gallery" id="galeria">
       <div class="container">
         <div class="section-head">
           <div class="section-head-main">
             <p class="eyebrow" data-reveal>Lo que verás en tu pedido</p>
-            <h2 class="section-title" data-reveal>Así se ve <span class="text-gold">nuestra tienda</span></h2>
+            <h2 class="section-title" data-reveal>Así se ve <span class="text-gold">tu compra</span></h2>
           </div>
-          <p class="section-desc" data-reveal>Productos frescos listos cada día, anaqueles bien surtidos y entregas directas a tu puerta en Plaza Puebla. Esto es lo que puedes esperar cuando nos escribes.</p>
+          <p class="section-desc" data-reveal>Productos frescos listos cada día y entregas directas a tu puerta en Puebla. Esto es lo que puedes esperar cuando nos escribes.</p>
         </div>
         <div class="gallery-grid" data-reveal-group>
           <figure class="gallery-item" data-reveal="media">
-            <img src="img/11.jpg" alt="Frutas y verduras frescas acomodadas en canastas sobre mostrador" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="0" aria-label="Ampliar imagen: Frutas y verduras frescas acomodadas en canastas sobre mostrador">
+            <img src="img/6.jpg" alt="Clienta eligiendo frutas frescas en la tienda" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="0" aria-label="Ampliar imagen: Clienta eligiendo frutas frescas en la tienda">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
-            <img src="img/12.jpg" alt="Anaquel con latas, cereales y productos de despensa organizados" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="1" aria-label="Ampliar imagen: Anaquel con latas, cereales y productos de despensa organizados">
+            <img src="img/8.jpg" alt="Producto fresco listo en el mostrador para llevar" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="1" aria-label="Ampliar imagen: Producto fresco listo en el mostrador para llevar">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
-            <img src="img/13.jpg" alt="Bolsas de mandado listas para entrega en puerta de casa" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="2" aria-label="Ampliar imagen: Bolsas de mandado listas para entrega en puerta de casa">
+            <img src="img/10.jpg" alt="Anaqueles surtidos con productos de despensa" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="2" aria-label="Ampliar imagen: Anaqueles surtidos con productos de despensa">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
-            <img src="img/14.jpg" alt="Interior de tienda de abarrotes con pasillos surtidos" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="3" aria-label="Ampliar imagen: Interior de tienda de abarrotes con pasillos surtidos">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
-            <img src="img/15.jpg" alt="Productos de limpieza y abarrotes secos en estante" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="4" aria-label="Ampliar imagen: Productos de limpieza y abarrotes secos en estante">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
-            <img src="img/16.jpg" alt="Repartidor entregando bolsas de abarrotes en puerta de domicilio" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="5" aria-label="Ampliar imagen: Repartidor entregando bolsas de abarrotes en puerta de domicilio">
+            <img src="img/13.jpg" alt="Pedido listo para entregarse a domicilio" loading="lazy">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="3" aria-label="Ampliar imagen: Pedido listo para entregarse a domicilio">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
@@ -3479,7 +3438,7 @@ main section[id] {
         <div class="gallery-cta" data-reveal>
           <div class="gallery-cta-text">
             <svg viewBox="0 0 24 24" class="gallery-cta-icon" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4V5Zm0 6h16v2H4v-2Zm0 6h10v2H4v-2Z"/></svg>
-            <p>Hazle facil la vida a tu familia. Pide tus abarrotes frescos hoy y recibelos en la puerta de tu casa.</p>
+            <p>¿Ya sabes que se te antoja? Mándanos tu lista y te la llevamos hoy mismo.</p>
           </div>
           <button type="button" class="btn btn-outline" data-wa-trigger>
             <span>Haz tu pedido ahora</span>
@@ -3489,13 +3448,13 @@ main section[id] {
       </div>
     </section>
 <section class="contact has-bg" id="contacto">
-      <div class="section-bg" style="background-image:url('img/10.jpg');" aria-hidden="true"></div>
+      <div class="section-bg" style="background-image:url('img/2.jpg');" aria-hidden="true"></div>
       <div class="section-bg-veil" aria-hidden="true"></div>
       <div class="container contact-grid">
         <div class="contact-info">
           <p class="eyebrow" data-reveal>Escríbenos cuando quieras</p>
           <h2 class="section-title" data-reveal>Pide tu despensa <span class="text-gold">hoy mismo</span></h2>
-          <p class="section-desc" data-reveal>Estamos cerca de ti en Plaza Puebla. Mándanos tu pedido por WhatsApp y te lo llevamos. Sin complicaciones, sin filas, sin salir de casa.</p>
+          <p class="section-desc" data-reveal>Estamos cerca de ti en Puebla. Mándanos tu pedido por WhatsApp y te lo llevamos. Sin complicaciones, sin filas, sin salir de casa.</p>
           <ul class="contact-list" data-reveal-group>
             <li data-reveal>
               <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
@@ -3543,9 +3502,9 @@ main section[id] {
       <div class="footer-brand">
         <a href="#inicio" class="brand">
           <span class="brand-mark"><img src="logo.svg" alt="DON VIC ABARROTES" class="brand-logo"></span>
-          <span class="brand-text"><span class="brand-name">DON VIC ABARROTES</span><span class="brand-tagline">Abarrotes frescos cada dia en Plaza Puebla</span></span>
+          <span class="brand-text"><span class="brand-name">DON VIC ABARROTES</span><span class="brand-tagline">Abarrotes frescos cada dia en Puebla</span></span>
         </a>
-        <p>Abarrotes Plaza Puebla: productos frescos cada día, precios accesibles y servicio a domicilio en Plaza Puebla. Tu tienda de confianza, cerca de donde vives.</p>
+        <p>Don Vic Abarrotes: productos frescos cada día, precios accesibles y servicio a domicilio en Puebla. Tu tienda de confianza, cerca de donde vives.</p>
       </div>
       <div class="footer-col">
         <h4>Navegación</h4>
@@ -3568,7 +3527,7 @@ main section[id] {
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <p>&copy; <span id="year"></span> DON VIC ABARROTES. Todos los derechos reservados.</p>
-        <p class="footer-bottom-tag">Abarrotes frescos cada dia en Plaza Puebla</p>
+        <p class="footer-bottom-tag">Abarrotes frescos cada dia en Puebla</p>
       </div>
     </div>
   </footer>
@@ -3590,7 +3549,7 @@ main section[id] {
         <a href="https://wa.me/2214101998?text=Hola%2C%20quiero%20informacion" target="_blank" rel="noopener" class="wa-modal-option">
           <span class="wa-modal-option-body">
             <span class="wa-modal-option-title">Hacer un pedido a domicilio</span>
-            <span class="wa-modal-option-desc">Dinos qué productos necesitas y te lo llevamos a tu puerta en Plaza Puebla.</span>
+            <span class="wa-modal-option-desc">Dinos qué productos necesitas y te lo llevamos a tu puerta en Puebla.</span>
           </span>
           <svg viewBox="0 0 24 24" class="wa-modal-option-arrow" aria-hidden="true"><path fill="currentColor" d="m13.5 5-1.4 1.4 4.6 4.6H4v2h12.7l-4.6 4.6L13.5 19l7-7Z"/></svg>
         </a>
